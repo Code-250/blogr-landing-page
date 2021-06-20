@@ -104,6 +104,10 @@ ul {
   text-align: center;
   color: hsl(0, 0%, 100%) !important;
 }
+.header-text-content {
+  color: hsl(0, 0%, 100%) !important;
+  opacity: 0.8;
+}
 .header-main-content {
   font-weight: 700;
   color: hsl(0, 0%, 100%) !important;
@@ -136,7 +140,6 @@ ul {
 .content-title {
   text-align: center;
 }
-
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -197,9 +200,13 @@ footer {
   background-color: hsl(240, 10%, 16%);
   border-radius: 0px 100px 0px 0px;
 }
+.footer-body {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
 .footer {
   display: flex;
-  height: 10rem;
   justify-content: space-around;
   padding-top: 4rem;
   padding-right: 10rem;
@@ -229,28 +236,89 @@ footer {
   }
   .designed {
     display: flex;
+    font-size: 28px;
+    justify-content: center;
+    margin-top: 60px;
   }
   .content-right {
-    background: url("/images/illustration-editor-mobile.svg") no-repeat;
+    background: url("/images/illustration-editor-mobile.svg") -20px 100px no-repeat;
   }
   .content-left {
     display: block;
     width: 100%;
     text-align: center;
+    padding-left: 0px;
+    margin-top: 470px;
+  }
+  .footer-title {
+    text-align: center;
+    font-size: 26px;
   }
   .content {
     display: block;
+    height: 38rem;
   }
-  .phones + img {
-    padding: 0px;
-    width: 120px;
+  .content-2 {
+    display: flex;
+    flex-direction: column;
+    background: url("/images/bg-pattern-circles.svg") -120px -250px no-repeat;
+    background-size: 600px;
+    height: 38rem;
+  }
+  .phones {
+    padding-left: 0px;
+    margin-top: -10rem;
+  }
+  .phones-css {
+    width: 100%;
+    height: 100%;
   }
   .mobile-view {
-    padding-right: 0%;
+    margin-top: 0px;
+    padding-right: 35px;
+    padding-left: 40px;
+  }
+  .content-3 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    height: 60rem;
+  }
+  .laptop-svg {
+    background: url("/images/illustration-laptop-mobile.svg") -60px 60px no-repeat;
+  }
+  .explaination-3 {
+    padding-top: 27rem;
+    display: flex;
+  }
+  .body-title {
+    text-align: center;
+  }
+  .body-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  footer {
+    height: 54rem;
+    display: flex;
   }
   .footer {
     width: 100%;
     flex-direction: column;
     justify-content: center;
+    padding-top: 0;
+    padding-right: 0;
+    height: 50rem;
+  }
+  .footer-body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+  }
+  .footer-center {
+    text-align: center;
+  }
+  .footer-logo {
+    padding-bottom: 30px;
   }
 }

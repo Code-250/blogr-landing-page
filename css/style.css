@@ -203,7 +203,8 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: hsl(237, 17%, 21%) !important;
-  background: url("../images/bg-pattern-circles.svg") -220px -500px no-repeat;
+  background: url("../images/bg-pattern-circles.svg") -200px -500px no-repeat;
+  background-size: 900px;
   border-radius: 0px 120px 0px 120px;
   height: 30rem;
 }

@@ -19,80 +19,103 @@
     <header class="header-container">
         <nav class="header">
             <div class="nav-items">
-            <div class="left-side-nav">
-                <img class="logo" src="./images/logo.svg" alt="Logo"/>
-                <ul class="nav-links activate-mobile">
-                    <div class="project-link">
-                        <li class="link">Product</li>
-                   
-                        <div class="dropdown">
-                                <a href="#" class="drop-link">OverView</a>
-                                <a href="#" class="drop-link">Pricing</a>
-                                <a href="#" class="drop-link">Marketing</a>
-                                <a href="#" class="drop-link">Features</a>
-                                <a href="#" class="drop-link">Integrations</a>
+                <div class="left-side-nav">
+                    <img class="logo" src="./images/logo.svg" alt="Logo"/>
+                    <ul class="nav-links activate-mobile">
+                        <div class="project-link">
+                            <li class="link">Product</li>
+                    
+                            <div class="dropdown">
+                                    <a href="#" class="drop-link">OverView</a>
+                                    <a href="#" class="drop-link">Pricing</a>
+                                    <a href="#" class="drop-link">Marketing</a>
+                                    <a href="#" class="drop-link">Features</a>
+                                    <a href="#" class="drop-link">Integrations</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-link">
-                        <li class="link">Company</li>
-                   
-                        <div class="dropdown">
-                                <a href="#" class="drop-link">About</a>
-                                <a href="#" class="drop-link">Team</a>
-                                <a href="#" class="drop-link">Blog</a>
-                                <a href="#" class="drop-link">Careers</a>
+                        <div class="project-link">
+                            <li class="link">Company</li>
+                    
+                            <div class="dropdown">
+                                    <a href="#" class="drop-link">About</a>
+                                    <a href="#" class="drop-link">Team</a>
+                                    <a href="#" class="drop-link">Blog</a>
+                                    <a href="#" class="drop-link">Careers</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-link">
-                        <li class="link">Connect</li>
-                   
-                        <div class="dropdown">
-                                <a href="#" class="drop-link">Contact</a>
-                                <a href="#" class="drop-link">Newsletter</a>
-                                <a href="#" class="drop-link">LinkedIn</a>
+                        <div class="project-link">
+                            <li class="link">Connect</li>
+                    
+                            <div class="dropdown">
+                                    <a href="#" class="drop-link">Contact</a>
+                                    <a href="#" class="drop-link">Newsletter</a>
+                                    <a href="#" class="drop-link">LinkedIn</a>
+                            </div>
                         </div>
-                    </div>
-                </ul>
-            </div>
-            <div class="authenticate-btn activate-mobile">
-                <button class=" btn login-btn">Login</button>
-                <button class="btn signup-btn">Signup</button>
-            </div>
-                <div class="hamburger-icon">
-                    <div class="icons">
-                        <img class="hamburger-menu" src="./images/icon-hamburger.svg" alt="menu-icon"/>
-                    <img  class="close-icon" src="./images/icon-close.svg" alt="close-icon"/>
-                    </div>
-                    <div class="drop-content">
-                        <div class="show-allows"></div>
-                        <ul>
-                            <li id="production" class="dd_wrap "><a href="#">Product</a>
-                               
-                            </li>
-                            <li class="dd_wrap"><a href="#">Company</a>
-                                
-                            </li>
-                            <li class="dd_wrap"><a href="#">Connect</a></li>
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
+                <div class="authenticate-btn activate-mobile">
+                    <button class=" btn login-btn">Login</button>
+                    <button class="btn signup-btn">Signup</button>
+                </div>
+                <div class="hamburger">
+                    <img id="hamburger-icon" src="./images/icon-hamburger.svg" alt="hamburger"/>
+                    <img id="close-icon" src="./images/icon-close.svg" alt="close"/>
                 </div>
             </div>
         </nav>
         <div class="mobile">
-            <div class="menu">
-                <div class="menu-nav-links">
-                    <li class="menu-links">Products</li>
-                    <hr/>
-                    <li class="menu-links">Company</li>
-                    <hr/>
-                    <li class="menu-links">Connect</li>
-                    <hr/>
-                    <span class="menu-btn">login</span>
-                    <hr/>
-                    <li class="menu-btn">signup</li>
+            <ul class="menu-nav-links">
+                <li id="product" class="menu-links"><a href="#">Products</a> </li>
+                <li id="company" class="menu-links"><a href="#">Company</a>
+                </li>
+                <li id="connect" class="menu-links"><a href="#">Connect</a>
+                </li>
+                <li class="menu-btn"><a href="#">login</a></li>
+                <li class="menu-btn"><a href="#">signup</a></li>
+            </ul>
+        </div>
+        <div class="products-link">
+            <div class="products-container">
+                <div class="product-title">
+                    <h3>Products</h3>
+                </div>
+                <div class="product-link-items">
+                    <span class="link-item"><a href="#">Overview</a></span>
+                    <span class="link-item"><a href="#">Pricing</a></span>
+                    <span class="link-item"><a href="#">Marketing</a></span>
+                    <span class="link-item"><a href="#">Features</a></span>
+                    <span class="link-item"><a href="#">Integrations</a></span>
                 </div>
             </div>
         </div>
+        <div class="company-link">
+            <div class="company-container">
+                <div class="company-title">
+                    <h3>Company</h3>
+                </div>
+                <div class="company-link-items">
+                    <span class="link-item"><a href="#">About</a></span>
+                    <span class="link-item"><a href="#">Team</a></span>
+                    <span class="link-item"><a href="#">Blog</a></span>
+                    <span class="link-item"><a href="#">Careers</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="connect-link">
+                <div class="connect-container">
+                    <div class="connect-title">
+                        <h3>Connect</h3>
+                    </div>
+                    <div class="connect-link-items">
+                        <span class="link-item"><a href="#">Overview</a></span>
+                        <span class="link-item"><a href="#">Pricing</a></span>
+                        <span class="link-item"><a href="#">Marketing</a></span>
+                        <span class="link-item"><a href="#">Features</a></span>
+                        <span class="link-item"><a href="#">Integrations</a></span>
+                    </div>
+                </div>
+            </div>
         <div class="header-description">
             <div class="header-content">
                 <h1 class="header-main-content">A modern publishing platform</h1>

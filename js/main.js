@@ -22,35 +22,32 @@ hamburger.addEventListener("click", () => {
 });
 
 productLinks.addEventListener("click", () => {
-  mobileLinks.classList.remove("active");
   productItems.classList.toggle("active");
-
-  console.log("this and you");
-});
-
-productTitle.addEventListener("click", () => {
-  productItems.classList.remove("active");
-  mobileLinks.classList.toggle("active");
-});
-companyLinks.addEventListener("click", () => {
-  mobileLinks.classList.remove("active");
-  companyItems.classList.toggle("active");
-
-  console.log("this and you");
-});
-
-companyTitle.addEventListener("click", () => {
   companyItems.classList.remove("active");
-  mobileLinks.classList.toggle("active");
-});
-connectLinks.addEventListener("click", () => {
-  mobileLinks.classList.remove("active");
-  connectItems.classList.toggle("active");
-
-  console.log("this and you");
-});
-
-connectTitle.addEventListener("click", () => {
   connectItems.classList.remove("active");
-  mobileLinks.classList.toggle("active");
 });
+
+// productTitle.addEventListener("click", () => {
+//   productItems.classList.remove("active");
+//   mobileLinks.classList.toggle("active");
+// });
+companyLinks.addEventListener("click", () => {
+  companyItems.classList.toggle("active");
+  productItems.classList.remove("active");
+  connectItems.classList.remove("active");
+});
+
+// companyTitle.addEventListener("click", () => {
+//   companyItems.classList.remove("active");
+//   mobileLinks.classList.toggle("active");
+// });
+connectLinks.addEventListener("click", () => {
+  connectItems.classList.toggle("active");
+  productItems.classList.remove("active");
+  companyItems.classList.remove("active");
+});
+
+// connectTitle.addEventListener("click", () => {
+//   connectItems.classList.remove("active");
+//   mobileLinks.classList.toggle("active");
+// });

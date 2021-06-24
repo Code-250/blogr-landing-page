@@ -120,6 +120,7 @@ h1 {
   font-size: 16px;
   padding: 5px 10px 5px 10px;
   border: none;
+  height: 6vh;
 }
 .btn:hover {
   cursor: pointer;
@@ -133,7 +134,7 @@ h1 {
   text-align: center;
 }
 .login-btn:hover {
-  background-color: hsl(300, 0%, 43%);
+  background-color: rgb(236, 102, 102);
 }
 .signup-btn {
   color: hsl(353, 100%, 62%);
@@ -206,9 +207,11 @@ h1 {
 }
 .content-left {
   margin-top: 200px;
-  text-align: center;
   padding-left: 5rem;
   padding-right: 3rem;
+}
+.second-div {
+  padding-top: 3rem;
 }
 .content-2 {
   display: grid;
@@ -217,10 +220,11 @@ h1 {
   background: url("../images/bg-pattern-circles.svg") -200px -500px no-repeat;
   background-size: 900px;
   border-radius: 0px 120px 0px 120px;
-  height: 30rem;
+  height: 25rem;
 }
 .phones {
   padding-left: 120px;
+  margin-top: -4.7rem;
 }
 .mobile-view {
   display: flex;
@@ -231,7 +235,13 @@ h1 {
   padding-right: 5rem;
   padding-left: 3rem;
 }
-
+.tooling {
+  padding-top: 3rem;
+}
+.art-state {
+  color: white;
+  opacity: 0.9;
+}
 .content-3 {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
@@ -328,7 +338,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  line-height: 3;
+  line-height: 2;
 }
 .company-link {
   display: none;
@@ -348,7 +358,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  line-height: 3;
+  line-height: 2;
 }
 .connect-link {
   display: none;
@@ -368,7 +378,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  line-height: 3;
+  line-height: 2;
 }
 /**************** mobile view***************** */
 
@@ -495,9 +505,9 @@ footer {
   }
 
   .main-container {
-    margin-top: -4rem;
+    margin-top: 5rem;
     height: 60rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   .project-link {
     display: none;
@@ -515,10 +525,52 @@ footer {
   .mobile {
     display: none;
     flex-direction: column;
-    height: 18rem;
+    height: 28rem;
+    width: 80%;
+    margin: auto;
     background-color: #fff;
-    border-radius: 0px 0px 0px 5rem;
+    border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .authenticate-btn {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 6vh;
+    width: 100%;
+  }
+  .menu-btn {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 2;
+    border: none;
+    text-decoration: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+  }
+  .login-menu-btn {
+    opacity: 0.6;
+  }
+  #signup {
+    background: linear-gradient(
+      to right,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+    color: white;
+    width: 20%;
+    margin: auto;
+    height: 8vh;
+    padding-top: -2rem;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 16px;
+  }
+  .menu-links {
+    background: url("../images/icon-arrow-dark.svg") 340px 25px no-repeat;
   }
   .menu-nav-links {
     justify-content: center;
@@ -546,21 +598,20 @@ footer {
   .mobile.active {
     display: block;
   }
+  /* .product-link-menu{
+    height:
+  } */
   .products-link {
     display: none;
-    height: 20rem;
-    background-color: #fff;
-    border-radius: 0px 0px 0px 5rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: fit-content;
+    background-color: rgb(207, 203, 203);
   }
   .products-link span a {
     text-decoration: none;
     color: black;
     opacity: 0.7;
   }
-  .products-link span:last-child {
-    border-radius: 0px 0px 0px 2.2rem;
-  }
+
   .products-link span:hover {
     background-color: #dc5555;
   }
@@ -569,10 +620,8 @@ footer {
   }
   .company-link {
     display: none;
-    height: 20rem;
-    background-color: #fff;
-    border-radius: 0px 0px 0px 5rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: 8rem;
+    background-color: rgb(207, 203, 203);
   }
   .company-link span a {
     text-decoration: none;
@@ -590,10 +639,8 @@ footer {
   }
   .connect-link {
     display: none;
-    height: 20rem;
-    background-color: #fff;
-    border-radius: 0px 0px 0px 5rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: 6rem;
+    background-color: rgb(207, 203, 203);
   }
   .connect-link span a {
     text-decoration: none;
@@ -675,8 +722,8 @@ footer {
   }
 
   .main-container {
-    margin-top: -4rem;
-    height: 60rem;
+    margin-top: 8rem;
+    height: 65rem;
     margin-bottom: 4rem;
   }
   .project-link {
@@ -695,16 +742,58 @@ footer {
   .mobile {
     display: none;
     flex-direction: column;
-    height: 18rem;
+    height: fit-content;
+    width: 80%;
+    margin: auto;
     background-color: #fff;
-    border-radius: 0px 0px 0px 5rem;
+    border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
+  .authenticate-btn {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 6vh;
+    width: 100%;
+  }
+  .menu-btn {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 2;
+    border: none;
+    text-decoration: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+  }
+  .login-menu-btn {
+    opacity: 0.6;
+  }
+  #signup {
+    background: linear-gradient(
+      to right,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+    color: white;
+    width: 40%;
+    margin: auto;
+    height: 8vh;
+    padding-top: -2rem;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 16px;
+  }
+
   .menu-nav-links {
     justify-content: center;
     text-align: center;
     line-height: 3;
     padding-top: 1rem;
+    height: 18rem;
+  }
+  .buttons {
+    height: 7rem;
   }
   .menu-nav-links li a {
     text-decoration: none;
@@ -714,13 +803,14 @@ footer {
   .menu-nav-links li:last-child {
     border-radius: 0px 0px 0px 1.8rem;
   }
+  .menu-links {
+    background: url("../images/icon-arrow-dark.svg") 275px 25px no-repeat;
+  }
   .menu-links:hover {
-    background-color: rgb(241, 63, 63);
     cursor: pointer;
     color: white;
   }
   .menu-btn:hover {
-    background-color: rgb(241, 63, 63);
     cursor: pointer;
   }
   .mobile.active {
@@ -728,11 +818,10 @@ footer {
   }
   .products-link {
     display: none;
-    height: 20rem;
-    background-color: #fff;
-    border-radius: 0px 0px 0px 5rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: 10rem;
+    background-color: rgb(207, 203, 203);
   }
+
   .products-link span a {
     text-decoration: none;
     color: black;
@@ -741,18 +830,13 @@ footer {
   .products-link span:last-child {
     border-radius: 0px 0px 0px 2.2rem;
   }
-  .products-link span:hover {
-    background-color: #dc5555;
-  }
   .products-link.active {
     display: block;
   }
   .company-link {
     display: none;
-    height: 20rem;
-    background-color: #fff;
-    border-radius: 0px 0px 0px 5rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: 8rem;
+    background-color: rgb(207, 203, 203);
   }
   .company-link span a {
     text-decoration: none;
@@ -762,18 +846,14 @@ footer {
   .company-link span:last-child {
     border-radius: 0px 0px 0px 2.2rem;
   }
-  .company-link span:hover {
-    background-color: #dc5555;
-  }
+
   .company-link.active {
     display: block;
   }
   .connect-link {
     display: none;
-    height: 20rem;
-    background-color: #fff;
-    border-radius: 0px 0px 0px 5rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: 6rem;
+    background-color: rgb(207, 203, 203);
   }
   .connect-link span a {
     text-decoration: none;
@@ -783,9 +863,7 @@ footer {
   .connect-link span:last-child {
     border-radius: 0px 0px 0px 2.2rem;
   }
-  .connect-link span:hover {
-    background-color: #dc5555;
-  }
+
   .connect-link.active {
     display: block;
   }
@@ -809,7 +887,7 @@ footer {
   .content-2 {
     display: flex;
     flex-direction: column;
-    height: 40rem;
+    height: 30rem;
   }
   .phones img {
     width: 100%;
@@ -848,7 +926,7 @@ footer {
     padding: 2rem;
   }
   .main-container {
-    height: 65rem;
+    height: 70rem;
   }
   .content-2 {
     height: 30rem;
@@ -892,8 +970,11 @@ footer {
   .header-container {
     background: url("../images/bg-pattern-intro.svg") -200px 500px no-repeat;
   }
-  .main-container {
+  .header-content {
     margin-top: 1rem;
+  }
+  .main-container {
+    margin-top: 10rem;
     height: 75rem;
   }
   .nav-items {
@@ -905,92 +986,13 @@ footer {
   .left-side-nav {
     padding-left: 3rem;
   }
-  .hamburger-icon {
+  .hamburger {
     display: block;
     padding-right: 2rem;
     cursor: pointer;
   }
-  .icons {
-    position: relative;
-  }
-
-  .hamburger-menu {
-    display: block;
-  }
-  .hamburger-menu.active {
-    display: none;
-  }
-  .drop-content {
-    display: none;
-    position: absolute;
-    top: 68px;
-    right: 2rem;
-  }
-
-  .close-icon {
-    display: none;
-  }
-  .drop-content ul li a {
-    display: block;
-    background: #dc555f;
-    color: #fff;
-    padding: 10px 15px;
-    width: 100%;
-    letter-spacing: 2px;
-    transition: all 0.2s ease;
-  }
-  .drop-content ul li:first-child a {
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-  }
-
-  .drop-content ul li:last-child a {
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-  }
-
-  .dd_menu {
-    position: absolute;
-    right: 120px;
-    top: 0px;
-    z-index: 1;
-    transform: translateY(20px);
-    transition: all 0.4s ease;
-  }
-
-  .show-allows {
-    position: absolute;
-    border: 5px solid;
-    border-color: transparent #dc5555 transparent transparent;
-    width: 15px;
-    height: 10px;
-    top: -17px;
-    left: 92px;
-    border: 10px solid;
-    border-color: transparent transparent #dc5555 transparent;
-
-    /* transform: rotate(4%); */
-    z-index: 1;
-  }
-  .show-allow {
-    position: absolute;
-    border: 10px solid;
-    border-color: transparent #dc5555 transparent transparent;
-    width: 15px;
-    height: 10px;
-    left: 132px;
-  }
-  .drop-content ul li a:hover {
-    background-color: lightseagreen;
-    display: block;
-  }
-  .dd_menu.active {
-    display: block;
-  }
-
-  .drop-content.active,
-  .close-icon.active {
-    display: block;
+  .menu-links {
+    background: url("../images/icon-arrow-dark.svg") 185px 25px no-repeat;
   }
   .activate-mobile {
     display: none;
@@ -1001,8 +1003,13 @@ footer {
     justify-content: center;
     margin-top: 60px;
   }
+  .content-btns {
+    width: 100%;
+  }
+
   .content-right {
-    background: url("../images/illustration-editor-mobile.svg") -20px 100px no-repeat;
+    background: url("../images/illustration-editor-mobile.svg") -15px 100px no-repeat;
+    background-size: 370px;
   }
   .content-left {
     display: block;
@@ -1047,6 +1054,7 @@ footer {
   }
   .laptop-svg {
     background: url("../images/illustration-laptop-mobile.svg") -60px 60px no-repeat;
+    background-size: 450px;
   }
   .explaination-3 {
     padding-top: 4rem;

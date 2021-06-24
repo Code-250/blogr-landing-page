@@ -11,7 +11,7 @@ const companyItems = document.querySelector(".company-link");
 const connectItems = document.querySelector(".connect-link");
 const productTitle = document.querySelector(".product-title");
 const companyTitle = document.querySelector(".company-title");
-const connectTitle = document.querySelector(".product-title");
+const connectTitle = document.querySelector(".connect-title");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
